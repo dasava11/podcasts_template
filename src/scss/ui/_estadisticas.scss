@@ -1,0 +1,8 @@
+@use '../custom' as *;
+@use '../utils' as *;
+
+.estadisticas{
+  h2 {
+    @include headingBorder($secondary, $primary);
+  }
+}

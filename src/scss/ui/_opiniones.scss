@@ -1,0 +1,29 @@
+@use '../custom' as *;
+@use '../utils' as *;
+
+.opiniones {
+  h2 {
+      @include headingBorder($secondary, $primary);
+    }
+}
+
+.opinion {
+  border: .5rem solid $secondary;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  padding: 2rem 2rem 2rem 6rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    background-image: url('../img/comilla.svg');
+    background-size: 5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: .5rem;
+  }
+}

@@ -1,0 +1,26 @@
+@use '../custom' as *;
+
+.btn-header {
+      @include button-variant($primary, transparent, $secondary, darken($primary, 10%), transparent, darken($secondary, 10%));
+
+      @include button-size(1rem, 5rem, 2rem, 1rem);
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      margin-top: 2rem;
+
+  @include media-breakpoint-up(md){
+    display: inline-block;
+  }
+}
+
+.boton-plan {
+  @extend .btn-header;
+  border: 1px solid $white;
+  border-radius: 0px;
+
+  @include media-breakpoint-up(md) {
+      display: block;
+    }
+}

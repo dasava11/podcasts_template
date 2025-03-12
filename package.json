@@ -1,0 +1,24 @@
+{
+  "name": "podcastfm_template",
+  "version": "1.0.0",
+  "description": "Bootstrap 5, SASS y Gulp. Aprendiendo a crear mixins.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Sánchez Vargas",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-purgecss": "^7.0.2",
+    "gulp-rename": "^2.0.0",
+    "sass": "^1.85.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^3.0.0",
+    "gulp-sass": "^6.0.1",
+    "sass-migrator": "^2.3.1"
+  }
+}

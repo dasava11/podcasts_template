@@ -1,0 +1,10 @@
+@use '../custom' as *;
+@use '../utils' as *;
+/* @use 'utils/mixins'; */
+
+.crea-podcast {
+  h2 {
+    @include headingBorder($secondary, $primary);
+  }
+  
+}

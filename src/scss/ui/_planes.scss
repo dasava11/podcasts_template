@@ -1,0 +1,48 @@
+@use '../custom' as *;
+@use '../utils' as *;
+
+.planes {
+  h2 {
+    @include headingBorder($white, $primary)
+  }
+}
+
+.plan {
+  padding: 16rem 4rem 4rem 4rem;
+
+  @include media-breakpoint-up(md){
+    @include transition(transform 300ms ease);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .precio {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &.inicio {
+    @include bgIcon('../img/icono_inicio.svg');
+  }
+
+  &.negocio {
+    @include media-breakpoint-up(md){
+     margin-top: -5rem;
+     margin-bottom: -5rem;
+     border-radius: 2rem;
+     z-index: 100;
+     padding-top: calc(16rem + 5rem);
+     background-position-y: calc(2rem + 5rem);
+     
+    }
+
+    @include bgIcon('../img/icono_negocio.svg');
+  }
+
+  &.pro {
+    @include bgIcon('../img/icono_pro.svg');
+  }
+}
